@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+:root{--navy:#0F2852;--teal:#A88B4A;--mint:#ECE6D8;--ink:#13233A;--muted:#5B6B7F;--gold:#C2A878;--paper:#F7F5F0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Inter",sans-serif;background:#ccc}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);padding:120px 96px 190px;display:flex;flex-direction:column;justify-content:center}
+.s>*{position:relative;z-index:1}.s>.num,.s>.deco,.s>.brand,.s>.pg,.s>.swipe{position:absolute}
+.dark{background:var(--navy);color:#fff}
+.brand{position:absolute;left:96px;bottom:60px;line-height:0;font-weight:700;font-size:28px;letter-spacing:.5px}
+.brand span{color:var(--teal)}
+
+.pg{position:absolute;right:96px;bottom:64px;font-size:26px;color:var(--muted);font-weight:500}
+.dark .pg{color:#9FB3C8}
+.tag{display:inline-block;font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:36px}
+.dark .tag{color:#D4BA82}
+.num{font-family:"Inter Display","Inter";font-weight:800;font-size:220px;line-height:1;color:var(--mint);right:80px;top:60px;z-index:0}
+h1{font-family:"Inter Display","Inter";font-weight:800;font-size:116px;line-height:1.04;letter-spacing:-2px}
+h2{font-family:"Inter Display","Inter";font-weight:800;font-size:80px;line-height:1.08;letter-spacing:-1.5px;margin-bottom:48px;max-width:860px}
+p{font-size:42px;line-height:1.45;color:var(--ink)}
+.dark p{color:#DCE6F0}
+.rule{width:120px;height:8px;background:var(--gold);margin:48px 0}
+.box{background:#fff;border-left:10px solid var(--teal);padding:36px 40px;margin-top:44px;border-radius:6px}
+.box p{font-size:38px}
+.law{font-size:30px;color:var(--muted);margin-top:40px;font-weight:500}
+ul{list-style:none;margin-top:12px}
+li{font-size:40px;line-height:1.35;padding:22px 0 18px 56px;position:relative;border-bottom:2px solid #E4E1D8}
+li:before{content:"";position:absolute;left:0;top:38px;width:24px;height:24px;border-radius:50%;background:var(--teal)}
+.swipe{position:absolute;right:96px;bottom:150px;font-size:30px;font-weight:600;color:#D4BA82}
+.cover-sub{font-size:44px;line-height:1.4;color:#DCE6F0;max-width:820px}
+.disc{font-size:28px;color:#9FB3C8;margin-top:60px;line-height:1.5}
+.cta{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;font-size:36px;padding:26px 44px;border-radius:60px;margin-top:20px}
+.deco{position:absolute;right:-180px;top:-180px;width:620px;height:620px;border-radius:50%;border:70px solid rgba(194,168,120,.10)}
+.brand img{height:36px}.toplogo{width:400px;margin-bottom:70px}.biglogo{width:620px;margin-bottom:70px}</style></head><body>
+
+<!-- 1 COVER -->
+<section class="s dark" id="s1">
+  <div class="deco"></div>
+  <img class="toplogo" src="logo_full_white.png">
+  <h1>Running<br>Telemedicine<br>in Indonesia?</h1>
+  <div class="rule"></div>
+  <p class="cover-sub">6 legal must-knows for hospitals, clinics and health-tech founders under Law 17/2023 and GR 28/2024.</p>
+  <div class="swipe">Swipe →</div>
+  <div class="brand"><img src="logo_word_white.png"></div><div class="pg">1/8</div>
+</section>
+
+<!-- 2 -->
+<section class="s" id="s2">
+  <div class="num">01</div>
+  <div class="tag">Know the definition</div>
+  <h2>Telemedicine is a clinical service, not just an app</h2>
+  <p>The Health Law defines telemedicine as the delivery of <b>clinical services</b> through telecommunication and digital technology.</p>
+  <div class="box"><p>It is one part of <b>telehealth</b>, which also covers non-clinical services such as health information and public health.</p></div>
+  <div class="law">Law 17/2023, Art. 1(21)–(22)</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">2/8</div>
+</section>
+
+<!-- 3 -->
+<section class="s" id="s3">
+  <div class="num">02</div>
+  <div class="tag">Who may provide it</div>
+  <h2>Only healthcare facilities can deliver telemedicine</h2>
+  <ul>
+    <li>Hospitals</li>
+    <li>Puskesmas (community health centres)</li>
+    <li>Clinics</li>
+    <li>Independent practices of doctors &amp; health workers</li>
+    <li>Health laboratories</li>
+    <li>Pharmacies</li>
+  </ul>
+  <div class="law">GR 28/2024 on the Implementation of Law 17/2023</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">3/8</div>
+</section>
+
+<!-- 4 -->
+<section class="s" id="s4">
+  <div class="num">03</div>
+  <div class="tag">Platforms &amp; partners</div>
+  <h2>Tech platforms are partners, not providers</h2>
+  <p>A facility may run its own telemedicine system or partner with a <b>registered Electronic System Operator (PSE)</b>.</p>
+  <div class="box"><p>The partnership agreement should clearly allocate roles, data handling and liability. Professional responsibility for clinical decisions stays with the treating doctor.</p></div>
+  <div class="law">Law 17/2023 · GR 28/2024</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">4/8</div>
+</section>
+
+<!-- 5 -->
+<section class="s" id="s5">
+  <div class="num">04</div>
+  <div class="tag">Your doctors</div>
+  <h2>Every doctor online still needs a valid STR and SIP</h2>
+  <p>Telemedicine services must be delivered by medical and health personnel who are <b>registered (STR)</b> and <b>licensed to practise (SIP)</b> in Indonesia.</p>
+  <div class="box"><p>Check credentials before onboarding doctors to your platform, and monitor expiry dates.</p></div>
+  <div class="law">Law 17/2023, Art. 172(4) · GR 28/2024</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">5/8</div>
+</section>
+
+<!-- 6 -->
+<section class="s" id="s6">
+  <div class="num">05</div>
+  <div class="tag">Records &amp; data</div>
+  <h2>Health data is "specific" personal data</h2>
+  <ul>
+    <li>Telemedicine encounters must be documented in <b>electronic medical records</b></li>
+    <li>Health data gets stricter protection under the <b>PDP Law</b></li>
+    <li>You need a lawful basis, strong security and a breach-response plan</li>
+  </ul>
+  <div class="law">MoH Reg. 24/2022 on Medical Records · Law 27/2022 on Personal Data Protection</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">6/8</div>
+</section>
+
+<!-- 7 -->
+<section class="s" id="s7">
+  <div class="num">06</div>
+  <div class="tag">Business set-up</div>
+  <h2>Structure the business before you launch</h2>
+  <ul>
+    <li>Choose the right legal entity and <b>KBLI</b> codes in OSS</li>
+    <li>Register the platform as a <b>PSE</b> with Komdigi</li>
+    <li>Keep clinical services inside a licensed facility</li>
+    <li>Review foreign-ownership rules if investors are offshore</li>
+  </ul>
+  <div class="law">Risk-based licensing (OSS-RBA) · GR 28/2024</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">7/8</div>
+</section>
+
+<!-- 8 CTA -->
+<section class="s dark" id="s8">
+  <div class="deco"></div>
+  <img class="biglogo" src="logo_full_white.png">
+  <div class="tag">Before you go live</div>
+  <h2 style="font-size:84px">Compliance is your competitive advantage.</h2>
+  <p>Planning, building or auditing a telemedicine service? Save this post and share it with your management team.</p>
+  <div style="margin-top:56px"><span class="cta">Follow @mediclaw.id</span></div>
+  <p class="disc">This post is general legal information and does not constitute legal advice. Seek advice on your specific situation.</p>
+  <div class="brand"><img src="logo_word_white.png"></div><div class="pg">8/8</div>
+</section>
+
+</body></html>

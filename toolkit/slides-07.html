@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+:root{--navy:#0F2852;--teal:#A88B4A;--mint:#ECE6D8;--ink:#13233A;--muted:#5B6B7F;--gold:#C2A878;--paper:#F7F5F0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Inter",sans-serif;background:#ccc}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);padding:120px 96px 190px;display:flex;flex-direction:column;justify-content:center}
+.s>*{position:relative;z-index:1}.s>.num,.s>.deco,.s>.brand,.s>.pg,.s>.swipe{position:absolute}
+.dark{background:var(--navy);color:#fff}
+.brand{position:absolute;left:96px;bottom:60px;line-height:0;font-weight:700;font-size:28px;letter-spacing:.5px}
+.brand span{color:var(--teal)}
+
+.pg{position:absolute;right:96px;bottom:64px;font-size:26px;color:var(--muted);font-weight:500}
+.dark .pg{color:#9FB3C8}
+.tag{display:inline-block;font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:36px}
+.dark .tag{color:#D4BA82}
+.num{font-family:"Inter Display","Inter";font-weight:800;font-size:220px;line-height:1;color:var(--mint);right:80px;top:60px;z-index:0}
+h1{font-family:"Inter Display","Inter";font-weight:800;font-size:116px;line-height:1.04;letter-spacing:-2px}
+h2{font-family:"Inter Display","Inter";font-weight:800;font-size:80px;line-height:1.08;letter-spacing:-1.5px;margin-bottom:48px;max-width:860px}
+p{font-size:42px;line-height:1.45;color:var(--ink)}
+.dark p{color:#DCE6F0}
+.rule{width:120px;height:8px;background:var(--gold);margin:48px 0}
+.box{background:#fff;border-left:10px solid var(--teal);padding:36px 40px;margin-top:44px;border-radius:6px}
+.box p{font-size:38px}
+.law{font-size:30px;color:var(--muted);margin-top:40px;font-weight:500}
+ul{list-style:none;margin-top:12px}
+li{font-size:40px;line-height:1.35;padding:22px 0 18px 56px;position:relative;border-bottom:2px solid #E4E1D8}
+li:before{content:"";position:absolute;left:0;top:38px;width:24px;height:24px;border-radius:50%;background:var(--teal)}
+.swipe{position:absolute;right:96px;bottom:150px;font-size:30px;font-weight:600;color:#D4BA82}
+.cover-sub{font-size:44px;line-height:1.4;color:#DCE6F0;max-width:820px}
+.disc{font-size:28px;color:#9FB3C8;margin-top:60px;line-height:1.5}
+.cta{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;font-size:36px;padding:26px 44px;border-radius:60px;margin-top:20px}
+.deco{position:absolute;right:-180px;top:-180px;width:620px;height:620px;border-radius:50%;border:70px solid rgba(194,168,120,.10)}
+.brand img{height:36px}.toplogo{width:400px;margin-bottom:70px}.biglogo{width:620px;margin-bottom:70px}</style></head><body>
+
+<!-- 1 COVER -->
+<section class="s dark" id="s1">
+  <div class="deco"></div>
+  <img class="toplogo" src="logo_full_white.png">
+  <h1>Is your clinic&rsquo;s accreditation still valid?</h1>
+  <div class="rule"></div>
+  <p class="cover-sub">6 accreditation rules every clinic, lab and private practice should know under MoH Reg. 34/2022.</p>
+  <div class="swipe">Swipe →</div>
+  <div class="brand"><img src="logo_word_white.png"></div><div class="pg">1/8</div>
+</section>
+
+<!-- 2 -->
+<section class="s" id="s2">
+  <div class="num">01</div>
+  <div class="tag">Who must comply</div>
+  <h2>Accreditation is mandatory</h2>
+  <p>Every <b>clinic</b>, health laboratory, blood transfusion unit, Puskesmas and independent doctor&rsquo;s or dentist&rsquo;s practice <b>must</b> be accredited.</p>
+  <div class="box"><p>No BPJS contract? Still mandatory. Hospitals are accredited under their own separate standards.</p></div>
+  <div class="law">MoH Reg. 34/2022, Art. 3(1); Law 17/2023 on Health</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">2/8</div>
+</section>
+
+<!-- 3 -->
+<section class="s" id="s3">
+  <div class="num">02</div>
+  <div class="tag">New facilities</div>
+  <h2>The 2-year deadline</h2>
+  <p>Your first accreditation is due <b>no later than 2 years</b> after you start operating under your first business licence.</p>
+  <div class="box"><p>Start preparing in year one: quality indicators, SOPs and patient safety incident reporting all form part of the preparation.</p></div>
+  <div class="law">MoH Reg. 34/2022, Art. 3(2) &amp; Art. 14(2)</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">3/8</div>
+</section>
+
+<!-- 4 -->
+<section class="s" id="s4">
+  <div class="num">03</div>
+  <div class="tag">Validity</div>
+  <h2>Valid for 5 years, then again</h2>
+  <p>The electronic accreditation certificate is valid for <b>5 years</b>. After that, the facility must be re-accredited, periodically, every 5 years.</p>
+  <div class="box"><p>Put the expiry date of your certificate in the management calendar, not just in a file.</p></div>
+  <div class="law">MoH Reg. 34/2022, Art. 4 &amp; Art. 20(3)</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">4/8</div>
+</section>
+
+<!-- 5 -->
+<section class="s" id="s5">
+  <div class="num">04</div>
+  <div class="tag">Re-accreditation</div>
+  <h2>Apply 3 months before expiry</h2>
+  <p>Re-accreditation must happen <b>before</b> the status expires. The application is due <b>at the latest 3 months</b> before the expiry date.</p>
+  <div class="box"><p>Survey teams and slots take time to book. Plan to start 6 to 12 months ahead.</p></div>
+  <div class="law">MoH Reg. 34/2022, Art. 25(1)&ndash;(2)</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">5/8</div>
+</section>
+
+<!-- 6 -->
+<section class="s" id="s6">
+  <div class="num">05</div>
+  <div class="tag">Not accredited?</div>
+  <h2>There is a remedial survey</h2>
+  <p>If the survey result is &ldquo;not accredited&rdquo;, a <b>remedial survey</b> may be carried out within <b>3 to 6 months</b> of that decision.</p>
+  <div class="box"><p>Treat the survey findings as your action plan. Fix them early, not in the last month.</p></div>
+  <div class="law">MoH Reg. 34/2022, Art. 21</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">6/8</div>
+</section>
+
+<!-- 7 -->
+<section class="s" id="s7">
+  <div class="num">06</div>
+  <div class="tag">Keeping your status</div>
+  <h2>Status can be revised or revoked</h2>
+  <p>The status can be adjusted or revoked if services fall short of the <b>national quality indicators</b>, if acts endanger <b>patient safety</b>, or if validation shows a mismatch.</p>
+  <div class="box"><p>Never display a status you do not hold: deliberately showing a false accreditation status is sanctionable.</p></div>
+  <div class="law">MoH Reg. 34/2022, Art. 31(1) &amp; Art. 33</div>
+  <div class="brand"><img src="logo_word_navy.png"></div><div class="pg">7/8</div>
+</section>
+
+<!-- 8 CTA -->
+<section class="s dark" id="s8">
+  <div class="deco"></div>
+  <img class="biglogo" src="logo_full_white.png">
+  <div class="tag">Before your certificate expires</div>
+  <h2 style="font-size:84px">Accredited once is not accredited forever.</h2>
+  <p>Save this post and share it with your clinic manager or quality team.</p>
+  <div style="margin-top:56px"><span class="cta">Follow @mediclaw.id</span></div>
+  <p class="disc">This post is general legal information and does not constitute legal advice. Seek advice on your specific situation.</p>
+  <div class="brand"><img src="logo_word_white.png"></div><div class="pg">8/8</div>
+</section>
+
+</body></html>
